@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ODD_TEI_le_tour_du_monde_en_80_jours_chap3et4.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="ODD_TEI_le_tour_du_monde_en_80_jours_chap3et4.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      
+      <!--Le titre de l'oeuvre intégrale de Jules Verne, dont est tiré l'extrait : -->
+      <fileDesc>
+         <titleStmt>
+            <title xml:id="le_tour" level="m" ref="https://www.wikidata.org/wiki/Q51954967">Le Tour du monde en quatre-vingts jours</title>
+            <author xml:id="jules_verne" ref="https://catalogue.bnf.fr/ark:/12148/cb11928016k https://www.wikidata.org/wiki/Q33977">
+               <forename>Jules </forename>
+               <surname>Verne</surname>
+            </author>
+         </titleStmt>
+         
+        <!-- Information sur l'édition du document encodé : -->
+         <editionStmt>
+            <edition> Encodage et ODD réalisés dans le cadre du cours de XML-TEI de Ségolène
+               Albouy pour le Master TNAH, Ecole nationale des Chartes </edition>
+            <respStmt>
+               <resp>Encodage XML-TEI et création d'une ODD</resp>
+               <name>
+                  <forename>Laura</forename>
+                  <surname>Chevalier</surname>
+               </name>
+            </respStmt>
+         </editionStmt>
+         
+         <!-- Si l'on admet que cet encodage soit publié sous licence CC Share-Alike -->
+         <publicationStmt>
+            <publisher>Éditions en ligne de l’école des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2023-02">Février 2023</date>
+            <availability>
+               <licence> target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+         
+         
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Le Tour du monde en quatre-vingts jours</title>
+                  <author>
+                     <forename>Jules</forename>
+                     <surname>Verne</surname>
+                  </author>
+               </titleStmt>
+               <!-- Le roman a été publié initialement sous forme de feuilletons par le journal suivant : -->
+               <publicationStmt>
+                  <publisher xml:id="le_temps" ref="https://www.wikidata.org/wiki/Q639137">
+                     <name type="journal">Le Temps</name>
+                     <note>Quotidien français publié à Paris du 25 avril 1861 au 29 novembre 1942, fondé par Auguste Nefftzer.
+                     </note>
+                  </publisher>
+                  <pubPlace>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                        <postCode>75009</postCode>
+                        <district type="arrondissement">9e</district>
+                        <street>Rue du Faubourg-Montmartre, <num>10</num>
+                        </street>
+                     </address>
+                  </pubPlace>
+                  <date when-iso="1872-11-07">7 novembre 1872</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k225187z/f1">
+                     Bibliothèque nationale de France </distributor>
+                  <availability>
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        > Domaine public </licence>
+                  </availability>
+               </publicationStmt>
+               <!-- Le contenu encodé est le suivant : -->
+               <seriesStmt>
+                  <title>Le Tour du monde en quatre-vingts jours</title>
+                  <biblScope unit="book">Le Tour du monde en qutre-vingts jours</biblScope>
+                  <biblScope unit="chapter">III et IV</biblScope>
+                  <biblScope unit="page" from="1" to="2">1-2</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      
+      <encodingDesc>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours de XML-TEI de Ségolène Albouy pour le Master 2
+               TNAH de l'Ecole nationale des chartes.</p>
+         </projectDesc>
+         <p>Cet encodage a été réalisé à partir de la numérisation disponible sur Gallica et
+            transcrit fidèlement, césures de fin de ligne comprises. On choisit de représenter la structure visuelle du texte, qu'une publication
+            dans un journal impose, avec conservation donc des colonnes, pages et césures de mots. e texte a été récupéré grâce à l'OCR présent sur Gallica mais a dû être corrigé à de nombreuses reprises.</p>
+      </encodingDesc>
+      
+      <profileDesc>
+         <creation>
+            <date when-iso="1872-11-07">7 novembre 1872</date>
+            <country key="FR">France</country>
+            <lang xml:lang="fr"/>
+         </creation>
+         
+         <particDesc>
+            <listPerson>
+               <!-- La liste des personnages présents dans le texte, la mendiante de fin exclue : -->
+               <person xml:id="phileas_fogg">
+                  <persName>Phileas Fogg</persName>
+                  <sex value="H"/>
+                  <note>Phileas Fogg est le personnage principal du roman feuilleton. Il vit à Londres, est âgé
+                     d'environ 40 ans. Gentleman, il fait partie de l'<foreign xml:lang="en">upper middle class</foreign>, la frange la plus aisée de
+                     la classe moyenne. Sa fortune s'estime à environ 40 000 livres sterling, dont il parie la moitié sur
+                     son tour du monde avec les habitués du Reform-Club et dépense l'autre moitié en frais de voyage.</note>
+               </person>
+               
+               <person xml:id="passepartout">
+                  <persName>Jean Passepartout</persName>
+                  <sex value="H"/>
+                  <note>Jean Passepartout est le domestique de <persName ref="#phileas_fogg">Phileas Fogg</persName>. C'est un Français originaire de Paris et âgé d'environ
+                     30 ans. C'est un homme fort, agile, obligeant et dévoué. Il accompagne son maître dans son tour du monde.</note>
+               </person>
+               
+               <person xml:id="andrew_stuart">
+                  <persName>Andrew Stuart</persName>
+                  <sex value="H"/>
+                  <note>Ingénieur. Stuart, préposé aux parties de whist avec Phileas Fogg et ses autres partenaires coutumiers, est sans doute le plus incrédule et le plus impétueux d'entre eux. 
+                     Déjà prêt à taquiner <persName ref="#gauthier_ralph">Gauthier Ralph</persName> sur le vol de la Banque d'Angleterre, il se monte très vite dans la discussion qui suit sur la 
+                     possibilité de faire le tour du monde en un temps donné, précisément quatre-vingts jours. Devant l'impassibilité de <persName ref="#phileas_fogg">Fogg</persName> qui soutient 
+                     que cela peut se faire, il en arrive à lui jeter un défi sous la forme d'un pari. Dès lors peut débuter l'étonnant voyage contre le temps.</note>
+               </person>
+                            
+               <person xml:id="john_sullivan">
+                  <persName>John Sullivan</persName>
+                  <sex value="H"/>
+                  <note>Banquier. Un partenaire attitré aux parties de whist du Reform-Club. C'est lui qui montre le calcul établi par le <title level="j">Morning Chronicle</title> pour faire le tour du monde en quatre-vingts jours. 
+                     Avec ses quatre autres collègues de jeu, il tiendra le pari lancé par <persName ref="#phileas_fogg">Phileas Fogg</persName>et le perdra.</note>
+               </person>
+               
+               <person xml:id="samuel_fallentin">
+                  <persName>Samuel Fallentin</persName>
+                  <sex value="H"/>
+                  <note>Banquier et un des partenaires habituels de <persName ref="phileas_fogg">Phileas Fogg</persName>dans les parties de whist au Reform-Club. 
+                     Il mettra quatre mille livres dans la balance pour tenir le pari.</note>  
+               </person>
+               
+               <person xml:id="thomas_flanagan">
+                  <persName>Thomas Flanagan</persName>
+                  <sex value="H"/>
+                  <note>Brasseur londonien. Un des habitués des parties de whist au Reform-Club. Comme quatre de ses connaissances, il pariera quatre mille livres
+                     sur l'échec de la tentative de <persName ref="#phileas_fogg">Phileas Fogg</persName>.</note>
+               </person>
+               
+               <person xml:id="gauthier_ralph">
+                  <persName>Gauthier Ralph</persName>
+                  <sex value="H"/>
+                  <note>Sous-gouverneur de la Banque d'Angleterre et un habitué du Reform-Club. Ralph est surtout préoccupé par le vol qui vient d'être commis et 
+                     ne doute pas un instant que le voleur sera arrêté. Il tiendra le pari de <persName ref="phileas_fogg">Phileas Fogg</persName> et le perdra. 
+                     Seule consolation pour lui, le voleur sera arrêté.</note>
+               </person>
+               
+            </listPerson>
+         </particDesc>
+         
+         <settingDesc>
+            <listPlace>
+               <!-- Liste des lieux cités, nous avons choisi d'indiquer les coordonnées géographiques pour les lieux représentants une étape
+               dans le tour du monde de Phileas (à des fins éventuelles de calcul de distance entre étapes, de cartographie du voyage):-->
+               <place xml:id="saville-row">
+                  <placeName type="rue" xml:lang="en">
+                     <name>Saville-Row</name>
+                     <address>
+                        <country key="UK"/>
+                        <settlement type="city">Londres</settlement>
+                        <street>No 7, Saville-Row</street>  
+                        <postCode>W1S 2ER</postCode>  
+                     </address>
+                  </placeName>
+                  <note>Rue où réside <persName ref="phileas_fogg">Phileas Fogg</persName>.</note>
+               </place>
+               
+               <place xml:id="londres">
+                  <placeName><settlement type="city">Londres</settlement></placeName>
+                  <location><geo>51.511002,-0.11586</geo></location>
+               </place>
+               
+               <!-- Le Reform-Club est une organisation, qui se regroupe à l'adresse ci-dessous dans un bâtiment dédié. Nous baliserons toutes les mentions au Reform-Club
+               avec la valise <placeName> définie plus bas, mais garderons à l'esprit que le Reform-Club ne se résumé pas qu'à un lieu et qu'il est aussi un cercle social qui existe en dehors
+               du bâtiment de Pall Mall.-->
+               <place xml:id="reform-club">
+                  <placeName xml:lang="en">
+                     <orgName>Reform-Club</orgName>
+                     <address>
+                        <country key="UK"/>
+                        <settlement type="city">Londres</settlement>
+                        <street>No 104, Pall Mall</street>  
+                        <postCode>SW1Y 5EW</postCode>  
+                     </address>
+                  </placeName>
+                  <note>Le Reform Club est un prestigieux club de gentlemens anglais, installé à Pall Mall dans Londres et créé en 1836 par Edward Ellice.
+                     <persName ref="phileas_fogg">Phileas Fogg</persName>, est membre du Reform Club. Il part faire le tour du monde sur un pari avec d'autres membres, commençant et finissant au cercle.
+                  </note>
+               </place>
+               
+               <place xml:id="pall-mall">
+                  <placeName type="rue" xml:lang="en">
+                     <name>Pall-Mall</name>
+                     <address>
+                        <country key="UK"/>
+                        <settlement type="city">Londres</settlement>
+                        <street>No 104, Pall-Mall</street>  
+                        <postCode>SW1Y 5EW</postCode>  
+                     </address>
+                  </placeName>
+                  <note>Rue de Londres, dans la cité de Westminster. Sa renommée lui vient surtout de ses gentlemen's clubs, fondés aux XIX<hi rend="superscript">e</hi> et XX<hi rend="superscript">e</hi> siècles, notamment le Reform Club. </note>
+               </place>
+               
+               <place xml:id="banque">
+                  <placeName>
+                     <orgName xml:lang="fr" type="banque">Banque d'Angleterre</orgName>
+                     <!-- Il est fait mention de la Banque d'Angleterre sous son appellation anglaise "Bank of England" d'où la précision suivante : -->
+                     <orgName xml:lang="en">Bank of England</orgName>
+                     <address>
+                        <country key="UK"/>
+                        <settlement type="city">Londres</settlement>
+                     </address>
+                  </placeName>
+               </place>
+               
+               <place xml:id="baring">
+                  <placeName>
+                     <orgName xml:lang="fr" type="banque">Baring frères</orgName>
+                     <address>
+                        <country key="UK"/>
+                        <settlement type="city">Londres</settlement>
+                     </address>
+                  </placeName>
+               </place>
+               
+               
+               <place xml:id="europe">
+                  <placeName type="continent">Europe</placeName>
+               </place>
+               
+               <place xml:id="amerique">
+                  <placeName type="continent">Amérique</placeName>
+               </place>
+               
+               <place xml:id="ru">
+                  <country key="UK">Royaume-Uni</country>
+               </place>
+               
+               <place xml:id="liverpool">
+                  <placeName><settlement type="city" key="UK">Liverpool</settlement></placeName>
+               </place>
+               
+               <place xml:id="glasgow">
+                  <placeName><settlement type="city" key="UK">Glasgow</settlement></placeName>
+               </place>
+               
+               <place xml:id="havre">
+                  <placeName><settlement type="city" key="FR">Le Havre</settlement></placeName>
+               </place>
+               
+               <place xml:id="suez">
+                  <placeName><settlement type="city" key="EGY">Suez</settlement></placeName>
+                  <location><geo>29.974498 32.537086</geo></location>
+               </place>
+               
+               <place xml:id="cenis">
+                  <geogName key="FR">Mont Cenis</geogName><region>Alps</region>
+               </place>
+               
+               <place xml:id="brindisi">
+                  <placeName><settlement type="city" key="IT">Brindisi</settlement></placeName>
+                  <location><geo>40.63592 17.688443</geo></location>
+               </place>
+               
+               <place xml:id="new-york">
+                  <placeName><settlement type="city" key="USA">New-York</settlement></placeName>
+                  <location><geo>40.712728 -74.006015</geo></location>
+               </place>
+               
+               <place xml:id="bombay">
+                  <placeName><settlement type="city" key="IND">Bombay</settlement></placeName>
+                  <location><geo>19.078545 72.878176</geo></location>
+               </place>
+               
+               <place xml:id="calcutta">
+                  <placeName><settlement type="city" key="IND">Calcutta</settlement></placeName>
+                  <location><geo>22.572672 88.363882</geo></location>
+               </place>
+               
+               <place xml:id="hong_kong">
+                  <placeName><settlement type="city" key="CH">Hong-Kong</settlement></placeName>
+                  <location><geo>22.279328 114.162813</geo></location>
+               </place>
+               
+               <place xml:id="yokohama">
+                  <placeName><settlement type="city" key="JAP">Yokohama</settlement></placeName>
+                  <location><geo>35.444991 139.63676</geo></location>
+               </place>
+               
+               <place xml:id="san-francisco">
+                  <placeName><settlement type="city" key="USA">San Francisco</settlement></placeName>
+                  <location><geo>37.779026 -122.419906</geo></location>
+               </place>
+               
+               <place xml:id="douvres">
+                  <placeName><settlement type="city" key="UK">Douvres</settlement></placeName>
+               </place>
+               
+               <place xml:id="calais">
+                  <placeName><settlement type="city" key="FR">Calais</settlement></placeName>
+               </place>
+               
+               <place xml:id="paris">
+                  <placeName><settlement type="city" key="FR">Paris</settlement></placeName>
+               </place>
+               
+               <place xml:id="gare_charing-cross">
+                  <placeName key="FR">Charing-Cross</placeName>
+               </place>
+               
+               <place xml:id="rothal">
+                  <placeName><settlement type="city" key="IND">Rothal</settlement></placeName>
+               </place>
+               
+               <place xml:id="allahabad">
+                  <placeName><settlement type="city" key="IND">Allahabad</settlement></placeName>
+               </place>
+               
+               <place xml:id="sydenham">
+                  <placeName><district type="quartier">Sydenham</district></placeName>
+                  <settlement type="city">Londres</settlement>
+               </place>
+               
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head place="top-left">
+               <title type="sub" level="a"><lb/>FEUILLETON DU <title level="j">TEMPS</title>
+               <lb/>DU <date when-iso="1872-11-07">7 NOVEMBRE</date></title>
+         </head> 
+         <head>
+               <title ref="#le-tour"><lb/><hi rend="grosses_majuscules bold">LE TOUR DU MONDE</hi>
+               <lb/><hi rend="petites_majuscules">EN</hi>
+               <lb/>QUATRE-VINGTS JOURS</title>
+         </head>
+         <!-- Conservation des pages avec la balise <pb> -->
+         <pb n="1"/>
+         <!-- Conservation des colonnes avec la balise <cb> -->
+         <cb n="1"/>
+         <div n="III" type="chapitre">
+            <head>
+               <lb/><hi rend="center"><num type="ordinal">III</num></hi>
+               <lb/><hi rend="petites_majuscules">OU S'ENGAGE UNE CONVERSATION QUI POURRA
+               <lb/>COUTER CHER A <persName ref="#phileas_fogg">PHILEAS FOGG</persName></hi>
+            </head>
+          <!-- Les dates fictives ont été encodées dans la balise <date> avec l'attribut type="fictive" pour les distinguer
+          des dates réelles, de même que les heures et les durées. J'ai choisi de baliser ces éléments afin d'éventuellement les exploiter pour réaliser un "calendrier" du tour
+          du monde de Phileas :-->
+               <p>
+                  <!-- Les heures ont été balisées avec une balise <time> que j'ai choisi d'insérer au sein d'une balise <date> afin qu'on puisse coupler l'information
+               date-heure à chaque fois qu'une heure seule est mentionné. Ceci dans l'idée, déjà évoquée, de pouvoir produire un déroulé précis (avec date et heure) des évènements, des étapes du récit et du tour du monde plus généralement.
+               Le temps et la course contre celui-ci est une dimension majeure de l'oeuvre, il me semblait obligatoire d'encoder toutes les parties du texte qui en parlait, à la minute près. -->
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName> avait quitté sa maison de
+               <lb/><placeName ref="#saville-row">Saville-row</placeName> à <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="11:30:00">onze heures et demie</time></date>; et 
+               <lb/>après avoir placé treize cent soixante-
+               <lb break="no"/>quinze fois son pied droit devant son pied
+               <lb/>gauche et treize cent soixante-seize fois
+               <lb/>son pied gauche devant son pied droit, il
+               <lb/>arriva au <placeName ref="#reform-club">Reform-Club</placeName>, vaste édifice élevé
+               <lb/>dans <placeName ref="#pall-mal">Pall-Mall</placeName>, et qui n'a pas coûté moins
+               <lb/>de trois millions à bâtir.
+               </p>
+               <p>
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName> se rendit aussitôt à la
+               <lb/>salle à manger, dont les neuf fenêtres
+               <lb/>s'ouvraient sur un beau jardin aux arbres
+               <lb/>déjà dorés par l'automne. Là, il prit place
+               <lb/>à la table habituelle où son couvert l'at-
+               <lb break="no"/>tendait; son déjeuner se composait d'un
+               <lb/>hors-d’oeuvre, d'un poisson bouilli relevé
+               <lb/>d'une <foreign xml:lang="en">reading sauce</foreign> de premier choix,
+               <lb/>d'un rosbeaf  écarlate agrémenté de con-
+               <!-- Certains mots d'origine anglaise ont été mis entre guillemets dans le texte. Nous avons choisi de ne pas conserver ces guillemets
+               mais de baliser les termes avec une balise <foreign>. A l'inverse, certains mots d'origine anglaise type "whist" n'ont pas été mis entre guillemets.
+               Pour ces mots, et bien qu'ils soient d'origine étrangère, nous choisirons de ne pas utiliser la balise <foreign> : -->
+               <lb break="no"/>diments <foreign xml:lang="en">musheron</foreign>, d'un gâteau farci
+               <lb/>de tiges de rhubarbe et de groseilles ver-
+               <!-- Les titres de presse ont été balisés avec une balise <title> et un attribut level="j". Dans le texte, il est fait à plusieurs endroits
+               mention de titres de journaux. Cela me semblait pertinent à baliser pour en tirer une étude sur la presse dans l'ouvrage de Jules Verne et notamment,
+               les habitudes et goûts des gentlemens londoniens en termes de journaux. N'oublions pas que le roman a été publié sous forme de feuilletons dans la presse,
+               et qu'il me paraissait donc nécessaire d'évoquer la place et la présence de celle-ci dans le texte.-->
+               <note place="bottom">Voir <hi rend="italic">Le Temps</hi> du <date when-iso="1872-11-06">6 novembre</date>.</note>
+             
+               <cb n="2"/> 
+               
+               <lb break="no"/>tes, d'un morceau de chester, le tout ar-
+               <lb break="no"/>rosé de quelques tasses d'un thé spéciale-
+               <lb break="no"/>ment recueilli pour l'office du <placeName ref="#reform-club">Reform-
+               <lb break="no"/>Club</placeName>.
+               </p>
+               <p>
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="12:47:00">midi quarante-sept</time></date>, ce gentleman se
+               <lb/>leva et se dirigea vers le grand salon,
+               <lb/>somptueux <foreign xml:lang="en">hall</foreign> orné de peintures ri-
+               <lb break="no"/>chement encadrées. Là, un domestique lui
+               <lb/>remit le <title level="j" xml:lang="en">Times</title> non coupé, dont <persName ref="#phileas_fogg">Phileas 
+               <lb/>Fogg</persName> opéra le laborieux dépliage avec une 
+               <lb/>sûreté de main qui dénotait une grande
+               <lb/>habitude de cette difficile opération. La
+               <lb/>lecture de ce journal occupa <persName ref="#phileas_fogg">Phileas Fogg</persName>
+               <lb/>jusqu'à <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="15:45:00">trois heures quarante-cinq</time></date>, et celle
+               <lb/>du <title level="j" xml:lang="en">Daily Telegraph</title>, - qui lui succéda,-
+               <lb break="no"/>dura jusqu'au dîner. Ce repas s'accomplit
+               <lb/>dans les mêmes conditions que le déjeu-
+               <lb break="no"/>ner avec adjonction de <foreign xml:lang="en">royal british 
+               <lb/>sauce</foreign>.
+            </p>
+            <p>
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="19:40:00">huit heures moins vingt</time></date>, le gentleman
+               <lb/>reparut dans le grand salon et s'absorba
+               <lb/>dans la lecture du <title level="j" xml:lang="en">Morning Chronicle</title>.
+            </p>
+            <p>
+               <lb/><date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="20:10:00">Une demi-heure plus tard</time></date>, divers ha-
+               <lb break="no"/>bitués du <placeName ref="#reform-club">Reform-Club</placeName> faisaient leur en-
+               <lb break="no"/>trée et s'approchaient de la cheminée où 
+               <lb/>brûlait un feu de houille. C'étaient les
+               <lb/>partenaires habituels de <persName ref="#phileas_fogg">Mr. Phileas Fogg</persName>,
+               <lb/>comme lui, enragés joueurs de whist :
+               <lb/>l'ingénieur <persName ref="#andrew_stuart">Andrew Stuart</persName>, les banquiers 
+               <lb/><persName ref="#john_sullivan">John Sullivan</persName> et <persName ref="#samuel_fallentin">Samuel Fallentin</persName> le 
+               <lb/>brasseur <persName ref="#thomas_flanagan">Thomas Flanagan</persName>, <persName ref="#gauthier_ralph">Gauthier 
+               <lb/>Ralph</persName>, un des administrateurs de la <placeName ref="#banque">Ban-
+               <lb break="no"/>que d'Angleterre</placeName>, personnages riches et
+               <lb/>considérés, même dans ce club qui compte
+               <lb/>parmi ses membres les sommités de l'in-
+               <lb break="no"/>dustrie et de la finance.
+            </p>
+            <p>
+               <lb/><said who="#thomas_flanagan" aloud="true" direct="true" toWhom="#gauthier_ralph">« Eh bien! <persName ref="#gauthier_ralph">Ralph</persName>, demanda <persName ref="#thomas_flanagan">Thomas
+               <lb/>Flanagan</persName>, où en est cette affaire de vol? </said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true">-Eh bien, répondit <persName ref="#andrew_stuart">Andrew Stuart</persName>, <placeName ref="#banque">la
+               <lb/>Banque</placeName> en sera pour son argent.</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-J'espère, au contraire, dit <persName ref="#gauthier_ralph">Gauthier 
+               <lb/>Ralph</persName>, que nous mettrons la main sur  
+               <lb/>l'auteur du vol. Des inspecteurs de police, 
+               <lb/>gens fort habiles, ont été envoyés en <placeName ref="#amerique">Amé- 
+               <lb break="no"/>rique</placeName> et en <placeName ref="#europe">Europe</placeName>, dans tous les princi-
+               <lb break="no"/>paux ports d'embarquement et de débar-
+               <lb break="no"/>quement, et il sera difficile à ce monsieur 
+               <lb/> de leur échapper.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">-Mais on a donc le signalement du vo-
+                  
+               <cb n="3"/>
+                  
+               <lb break="no"/>leur? demanda <persName ref="#andrew_stuart">Andrew Stuart</persName>.</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-D'abord, ce n'est pas un voleur, répo-
+               <lb break="no"/>ndit sérieusement <persName ref="#gauthier_ralph">Gauthier Ralph</persName>.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">-Comment? ce n'est pas un voleur, cet
+               <lb/>individu qui a soustrait pour cinquante
+               <lb/>cinq mille livres de bank-notes (1 million
+               <lb/>375,000 francs) ?</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-Non, répondit <persName ref="#gauthier_ralph">Ralph</persName>.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#gauthier_ralph">-C'est donc un industriel? dit <persName ref="#john_sullivan">John
+               <lb/>Sullivan</persName>.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-Le <title level="j">Morning Chronicle</title> assure que c'est 
+               <lb/>un gentleman. »</said>
+            </p>
+            <p>
+               <lb/>Celui qui fit cette réponse n'était autre 
+               <lb/>que <persName ref="#phileas_fogg">Phileas Fogg</persName>, dont la tête émergeait
+               <lb/>alors du flot de papier amassé autour de
+               <lb/>lui. En même temps, <persName ref="#phileas_fogg">Phileas Fogg</persName> sa-
+               <lb break="no"/>lua ses collègues, qui lui rendirent son 
+               <lb/>salut.
+            </p>
+            <p>
+               <lb/>Le fait dont il était question, que les di-
+               <lb break="no"/>vers journaux du <placeName ref="#ru">Royaume-Uni</placeName> discu-
+               <lb break="no"/>taient avec ardeur, s'était accompli trois
+               <lb/>jours auparavant, le <date calendar="gregorian" type="fictive" when-iso="1872-09-29">29 septembre</date>. Une 
+               <lb/>liasse de bank-notes, formant l'énorme 
+               <lb/>somme de cinquante-cinq mille livres,
+               <lb/>avait été prise sur la tablette du caissier
+               <lb/>principal de la <placeName ref="#banque">Banque d'Angleterre</placeName>.
+            </p>
+            <p>
+               <lb/>A qui s'étonnait qu'un tel vol eût pu
+               <lb/>s'accomplir aussi facilement, le sous-gou-
+               <lb break="no"/>verneur <persName ref="#gauthier_ralph">Gauthier Ralph</persName> se bornait à ré-
+               <lb break="no"/>pondre qu'à ce moment même, le caissier 
+               <lb/>s'occupait d'enregistrer une recette de 
+               <lb/>trois shillings six pences et qu'on ne saurait
+               <lb/>avoir l'œil à tout.
+            </p>
+            <p>
+               <lb/>Mais il convient de faire observer ici -
+               <lb/>ce qui rend le fait plus explicable - que
+               <lb/>cet admirable établissement de <placeName ref="#banque">Bank of 
+               <lb/>England</placeName> parait se soucier extrêmement 
+               <lb/>de la dignité du public. Point de gardes,
+               <lb/>point d'invalides, point de grillages ! L'or,
+               <lb/>l'argent, les billets sont exposés librement
+               <lb/>et pour ainsi dire à la merci du premier
+               <lb/>venu. On ne saurait mettre en suspicion
+               <lb/>l'honorabilité d'un passant quelconque. Un
+               <lb/>des meilleurs observateurs des usages an-
+               <lb break="no"/>glais raconte même ceci : Dans une des 
+               <lb/>salles de la <placeName ref="#banque">Banque</placeName> où il se trouvait un
+               <lb/>jour, il eut la curiosité de voir de plus
+               <lb/>près un lingot d'or pesant sept à huit li-
+               <lb break="no"/>vres, qui se trouvait exposé sur la tablette
+               
+               <cb n="4"/>
+               
+               <lb/>du caissier; il prit ce lingot, l'examina, le
+               <lb/>passa à son voisin, celui-ci à un autre, si 
+               <lb/>bien que le lingot, de main en main, s'en 
+               <lb/>alla jusqu'au fond d'un corridor obscur, et 
+               <lb/>ne revint, qu'une demi-heure après, repren-
+               <lb break="no"/>dre sa place, sans que le caissier eût seule-
+               <lb break="no"/>ment levé la tête.
+            </p>
+            <p>
+               <lb/>Mais, le <date calendar="gregorian" type="fictive" when-iso="1872-09-29">29 septembre</date>, les choses ne se 
+               <lb/>passèrent pas tout à fait ainsi; la liasse
+               <lb/>de bank-notes ne revint pas et quand la
+               <lb/>magnifique horloge, posée au-dessus du 
+               <lb/><foreign xml:lang="en">drawing-office</foreign> sonna à <date calendar="gregorian" type="fictive" when-iso="1872-09-29"><time when="17:00:00">cinq heures</time></date> la
+               <lb/>fermeture des bureaux, la <placeName ref="#banque">Banque d'An-
+               <lb break="no"/>gleterre</placeName> n'avait plus qu'à passer cinquante-
+               <lb break="no"/>cinq mille livres par le compte de profits 
+               <lb/>et pertes.
+            </p>
+            <p>
+               <lb/>Le vol bien et dûment reconnu, des
+               <lb/>agents, des « détectives » choisis parmi les
+               <lb/>plus habiles, furent envoyés dans les prin-
+               <lb break="no"/>cipaux ports, à <placeName ref="#liverpool">Liverpool</placeName>, à <placeName ref="#glasgow">Glasgow</placeName>, au
+               <lb/><placeName ref="#havre">Havre</placeName>, à <placeName ref="#suez">Suez</placeName>, à <placeName ref="#brindisi">Brindisi</placeName>, à <placeName ref="#new-york">New-
+               <lb break="no"/>York</placeName>, etc., avec promesse, en cas de suc-
+               <lb break="no"/>cès, d'une prime de deux mille livres
+               <lb/>(50,000 fr.) et cinq pour cent de la somme
+               <lb/>qui serait retrouvée. En attendant les 
+               <lb/>renseignements que devait fournir l'en-
+               <lb break="no"/>quête immédiatement commencée, ces in-
+               <lb break="no"/>specteurs avaient pour mission d'observer
+               <lb/>scrupuleusement tous les voyageurs en 
+               <lb/>arrivée ou en partance.
+            </p>
+            <p>
+               <lb/>Or, précisément, ainsi que le disait le 
+               <lb/><title level="j">Morning Chronicle</title>, on avait lieu de suppo-
+               <lb break="no"/>ser que l'auteur du vol ne faisait partie
+               <lb/>d'aucune des sociétés de voleurs d'<placeName ref="#ru">Angle-
+               <lb break="no"/>terre</placeName>. Pendant cette journée du <date calendar="gregorian" type="fictive" when-iso="1872-09-29">29 sep-
+               <lb break="no"/>tembre</date>, un gentleman bien mis, de bonnes 
+               <lb/>manières, l'air distingué, avait été remar-
+               <lb break="no"/>qué, qui allait et venait dans la salle des 
+               <lb/>payements, théâtre du vol. L'enquête avait
+               <lb/>permis de refaire assez exactement le si-
+               <lb break="no"/>gnalement de ce gentleman, signalement
+               <lb/>qui fut aussitôt adressé à tous les détec-
+               <lb break="no"/>tives du <placeName ref="#ru">Royaume-Uni</placeName> et du continent. 
+               <lb/>Quelques bons esprits - et <persName ref="#gauthier_ralph">Gauthier Ralph</persName>
+               <lb/>était du nombre - se croyaient donc fon-
+               <lb break="no"/>dés à espérer que le voleur n'échapperait
+               <lb/>pas.
+            </p>
+            <p>
+               <lb/>Comme on le pense, ce fait était à l'or-
+               <lb break="no"/>dre du jour à <placeName ref="#londres">Londres</placeName> et dans toute l'
+                  
+               <cb n="5"/>
+                  
+               <lb/><placeName ref="#ru">Angleterre</placeName>.On discutait, on se passionnait
+               <lb/>pour ou contre les probabilités du succès 
+               <lb/>de la police métropolitaine. On ne s'éton-
+               <lb break="no"/>nera donc pas d'entendre les membres du 
+               <lb/><placeName ref="#reform-club">Reform-Club</placeName> traiter la même question, 
+               <lb/>d'autant plus que l'un des sous-gouver
+               <lb/>neurs de la <placeName ref="#banque">Banque</placeName> se trouvait parmi
+               <lb/>eux.
+            </p>
+            <p>
+               <lb/>L'honorable <persName ref="#gauthier_ralph">Gauthier Ralph</persName> ne voulait 
+               <lb/>pas douter du résultat des recherches, es-
+               <lb break="no"/>timant que la prime offerte devrait singu-
+               <lb break="no"/>lièrement aiguiser le zèle et l'intelligence
+               <lb/>des agents. Mais son collègue, <persName ref="#andrew_stuart">Andrew 
+               <lb/>Stuart</persName>, était loin de partager cette con-
+               <lb break="no"/>fiance. La discussion continua donc entre
+               <lb/>les gentlemen qui s'étaient assis à la table
+               <lb/>de whist, <persName ref="#andrew_stuart">Stuart</persName> devant <persName ref="#thomas_flanagan">Flanagan</persName>, <persName ref="#samuel_fallentin">Fallen-
+               <lb break="no"/>tin</persName> devant <persName ref="#phileas_fogg">Phileas Fogg</persName>. Pendant le jeu,
+               <lb/>les joueurs ne parlaient pas, mais entre
+               <lb/>les robbres, la conversation interrompue
+               <lb/>reprenait de plus belle.
+            </p>
+            <p><!-- Le balisage des discours permet une exploitation des paroles prononcées pour une description du caractère, de la personnalité
+               des personnages. C'est en balisant les discours que j'ai pu réellement remarquer qui parlait beaucoup, qui parlait peu et que j'ai pu
+               commencer à dresser un portrait plus approfondi des personnages. -->
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">« Je soutiens, dit <persName ref="#andrew_stuart">Andrew Stuart</persName>, que
+               <lb/>les chances sont en faveur du voleur qui
+               <lb/>ne peut manquer d'être un habile hom-
+               <lb break="no"/>me !</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-Allons donc! répondit <persName ref="#gauthier_ralph">Ralph</persName>, il n'y a
+               <lb/>plus un pays dans lequel il puisse se ré-
+               <lb break="no"/>fugier.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">-Par exemple. </said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-Où voulez-vous qu'il aille? </said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">-Je n'en sais rien, répondit <persName ref="#andrew_stuart">Andrew 
+               <lb/>Stuart</persName>; mais, après tout, la terre est as-
+               <lb break="no"/>sez vaste.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart #thomas_flanagan">-Elle l'était autrefois… » dit à mi-voix 
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName>; puis « à vous de couper, 
+               <lb/>monsieur », ajouta-t-il en présentant les
+               <lb/>cartes à <persName ref="#thomas_flanagan">Thomas Flanagan</persName>.</said>
+            </p>
+            <p>
+               <lb/>La discussion fut suspendue pendant le
+               <lb/>robbre. Mais bientôt, <persName ref="#andrew_stuart">Andrew Stuart</persName> la re-
+               <lb break="no"/>prenait, disant :
+            </p>
+            <p>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">« Comment, autrefois! Est-ce que la 
+               <lb/>terre a diminué, par hasard?</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#andrew_stuart">-Sans doute, répondit <persName ref="#gauthier_ralph">Gauthier Ralph</persName>;
+               <lb/>je suis de l'avis de <persName ref="#phileas_fogg">Mr. Fogg</persName>. La terre a
+               <lb/>diminué puisqu'on la parcourt maintenant 
+               <lb/>dix fois plus vite qu'il y a cent ans. Et
+               <lb/>c'est ce qui, dans le cas dont nous nous 
+               <lb/>occupons, rendra les recherches plus ra-
+               <lb break="no"/>pides.</said>
+        
+               <cb n="6"/>
+               
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">-Et rendra plus facile aussi la fuite du 
+               <lb/>voleur !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-A vous de jouer, <persName ref="#andrew_stuart">monsieur Stuart</persName> ! »
+               <lb/>dit <persName ref="#phileas_fogg">Phileas Fogg</persName>.</said>
+               <lb/>Mais l’incrédule <persName ref="#andrew_stuart">Stuart</persName> n'était pas con-
+               <lb break="no"/>vaincu, et la partie achevée :
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#gauthier_ralph">« Il faut avouer, <persName ref="#gauthier_ralph">monsieur Ralph</persName>, reprit-
+               <lb/>il, que vous avez trouvé là une manière 
+               <lb/>plaisante de dire que la terre a diminué!
+               <lb/>Ainsi parce qu'on en fait maintenant le 
+               <lb/>tour en <date dur="P3M">trois mois</date>.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-<date dur="P80D">En quatre-vingts jours</date> seulement, dit 
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName>.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#thomas_flanagan #samuel_fallentin #andrew_stuart #gauthier_ralph">-En effet, messieurs, ajouta <persName ref="john_sullivan">John Sul-
+               <lb break="no"/>livan</persName>, <date dur="P80D">quatre-vingts jours</date> depuis que la
+               <lb/>section entre <placeName ref="#rothal">Rothal</placeName> et <placeName ref="#allahabad">Allahabad</placeName> a été 
+               <lb/>ouverte sur le « Great-Indian peninsular
+               <lb/> railway » et voici le calcul établi par le
+               <lb/> <title level="j">Morning Chronicle</title> :
+                  <!-- Les durées des étapes ont été balisées au moyen de <date> avec un attribut dur. La valeur de l'attribut n'est pas libre, elle suit certaines
+                     règles spécifiées sur https://tei-c.org/release/doc/tei-p5-doc/fr/html/ref-teidata.duration.iso.html : -->
+               <lb/>De <placeName ref="#londres">Londres</placeName> à <placeName ref="#suez">Suez</placeName> par le <placeName ref="#cenis">mont Cenis</placeName> et
+               <lb/><placeName ref="#brindisi">Brindisi</placeName>, railways et paquebots. <date dur="P7D">7 jours</date>.
+               <lb/>De <placeName ref="#suez">Suez</placeName> à <placeName ref="#bombay">Bombay</placeName>, paquebot. <date dur="P13D">13</date> 
+               <lb/>De <placeName ref="#bombay">Bombay</placeName> à <placeName>Calcutta</placeName>, railway. <date dur="P3D">3</date> 
+               <lb/>De <placeName ref="#calcutta">Calcutta</placeName> à <placeName ref="#hong-kong">Hong-Kong</placeName> (Chine), paquebot. <date dur="P12D">12</date> 
+               <lb/>De <placeName ref="#hong-kong">Hong-Kong</placeName> à <placeName ref="#yokohama">Yokohama</placeName> (Japon), paquebot. <date dur="P6D">6</date>
+               <lb/>De <placeName ref="#yokohama">Yokohama</placeName> à <placeName ref="#san-francisco">San Francisco</placeName>, paquebot. <date dur="P22D">22</date> 
+               <lb/>De <placeName ref="#san-francisco">San Francisco</placeName> à <placeName ref="#new-york">New- York</placeName>,railway. <date dur="P7D">7</date> 
+               <lb/>De <placeName ref="#new-york">New-York</placeName> à <placeName ref="#londres">Londres</placeName>, paquebot et railway. <date dur="P10D">10</date> 
+               <lb/>Total. <date dur="P80D">80 jours</date>.</said>
+            </p>
+            <p>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#john_sullivan">-Oui, <date dur="P80D">quatre-vingts jours</date>, s'écria <persName ref="#andrew_stuart">An-
+               <lb break="no"/>drew Stuart</persName>, qui, par inattention, coupa 
+               <lb/>une carte maîtresse, mais non compris le 
+               <lb/>mauvais temps, les vents contraires les
+               <lb/>naufrages, les déraillements, etc.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Tout compris, répondit <persName ref="#phileas_fogg">Phileas Fogg</persName>,
+               <lb/>en continuant de jouer, car, cette fois, la 
+               <lb/>discussion ne respectait plus le whist.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Même si les Indous ou les Indiens en-
+               <lb break="no"/>lèvent les rails! s’écria <persName ref="#andrew_stuart">Andrew Stuart</persName>,
+                  
+               <pb n="2"/>
+                  
+               <cb n="7"/>
+                  
+               <lb/>s'ils arrêtent les trains, pillent les four-
+               <lb break="no"/>gons et scalpent les voyageurs !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Tout compris, » répondit <persName ref="#phileas_fogg">Phileas Fogg</persName></said>,
+               <lb/>qui abattit son jeu, deux atouts maîtres.
+               <lb/><persName ref="#andrew_stuart">Andrew Stuart</persName> a qui c’était le tour de
+               <lb/> « faire », ramassa les cartes en disant:
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">« Théoriquement, vous avez raison,
+               <lb/><persName ref="#phileas_fogg">monsieur Fogg</persName>, mais dans la pratique…</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Dans la pratique aussi, <persName ref="#andrew_stuart">monsieur 
+               <lb/>Stuart</persName>.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Je voudrais bien vous y voir.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Il ne tient qu'à vous. Partons en-
+               <lb break="no"/>semble.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Le ciel m'en préserve ! s'écria <persName ref="#andrew_stuart">Stuart</persName>,
+               <lb/>mais je parierais bien quatre milles livres 
+               <lb/>(100,000 fr.) qu'un tel voyage, fait dans ces
+               <lb/>conditions, est impossible.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Très possible, au contraire, répondit
+               <lb/><persName ref="#phileas_fogg">Mr.Fogg</persName>.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Eh bien, faites-le donc!</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Le tour du monde en <date dur="P80D">quatre-vingts
+               <lb/>jours</date>?</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Oui.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Je le veux bien.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Quand?</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Tout de suite. Seulement, je vous pré-
+               <lb break="no"/>viens que je le ferai à vos frais.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-C'est de la folie! s'écria <persName ref="#andrew_stuart">Andrew
+               <lb/>Stuart</persName>, qui commençait à se vexer de l'in-
+               <lb break="no"/>sistance de son partenaire. Tenez! jouons,
+               <lb/>plutôt.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Refaites alors, répondit <persName ref="#phileas_fogg">Phileas Fogg</persName>, 
+               <lb/>car il y a « mal donne. »</said>
+            </p>
+            <p>
+               <lb/><persName ref="#andrew_stuart">Andrew Stuart</persName> reprît les cartes d'une
+               <lb/>main fébrile, puis, tout à coup, les posant
+               <lb/>sur la table :
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">«Eh bien, oui, <persName ref="#phileas_fogg">monsieur Fogg</persName>, dit-il,
+               <lb/>oui, je parie quatre mille livres! </said>
+               <lb/><said who="#samuel_fallentin" aloud="true" direct="true" toWhom="#andrew_stuart">-Mon cher <persName ref="#andrew_stuart">Stuart</persName>, dit <persName ref="#samuel_fallentin">Fallentin</persName>, cal-
+               <lb break="no"/>mez-vous. Ce n'est pas sérieux.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#samuel_fallentin">-Quand je dis je parie, répondit <persName ref="#andrew_stuart">An-
+               <lb break="no"/>drew Stuart</persName>, c'est toujours sérieux.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true">-Soit » dit <persName ref="#phileas_fogg">Mr. Fogg</persName>. Puis se tournant
+               <lb/>vers ses collègues:
+               <lb/> « J'ai vingt mille livres (500,000 fr.) dé-
+               <lb break="no"/>poses chez <placeName ref="#baring">Baring frères</placeName>. Je les risquerai
+               <lb/>volontiers.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#phileas_fogg">-Vingt mille livres ! s'écria John Sul-
+               <lb break="no"/>ivan. Vingt mille livres qu'un retard im-
+                  
+               <cb n="8"/>
+                  
+               <lb break="no"/>prévu peut vous faire perdre !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-L'imprévu n'existe pas, répondit sim-
+               <lb break="no"/>plement <persName ref="#phileas_fogg">Phileas Fogg</persName>.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#phileas_fogg">-Mais, <persName ref="#phileas_fogg">monsieur Fogg</persName>, ce laps de <date dur="P80D">qua-
+               <lb break="no"/>tre-vingts jours</date> n'est calculé que comme
+               <lb/>un minimum de temps!</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-Un minimum bien employé suffit à 
+               <lb/>tout.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#phileas_fogg">-Mais pour ne pas le dépasser, il faut
+               <lb/>sauter mathématiquement des railways 
+               <lb/>dans les paquebots, et des paquebots dans
+               <lb/>les chemins de fer!</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-Je sauterai mathématiquement.</said>
+               <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#phileas_fogg">-C'est une plaisanterie !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-Un bon Anglais ne plaisante jamais
+               <lb/>quand il s’agit d'une chose aussi sérieuse
+               <lb/>qu'un pari, répondit <persName ref="#phileas_fogg">Phileas Fogg</persName>. Je pa-
+               <lb break="no"/>rie vingt mille livres contre qui voudra,
+               <lb/>que je ferai le tour de la terre en <date dur="P80D">quatre-
+               <lb break="no"/>vingts jours</date> ou moins, soit <date dur="PT1920H">dix-neuf cent 
+               <lb/>vingt heures</date> ou <date dur="PT115200M">cent quinze mille deux
+               <lb/>cents minutes</date>. Acceptez-vous?</said>
+               <lb/><said who="#andrew_stuart #samuel_fallentin #john_sullivan #thomas_flanagan #gauthier_ralph" aloud="true" direct="true">-Nous acceptons, répondirent MM. 
+               <lb/><persName ref="#andrew_stuart">Stuart</persName>, <persName ref="#samuel_fallentin">Fallentin</persName>, <persName ref="#john_sullivan">Sullivan</persName>, <persName ref="#thomas_flanagan">Flanagan</persName> et
+               <lb/><persName ref="#gauthier_ralph">Ralph</persName></said>, après s'être entendus.
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart #samuel_fallentin #john_sullivan #thomas_flanagan #gauthier_ralph">-Bien, dit <persName ref="#phileas_fogg">Fogg</persName>. Le train de <placeName ref="#douvres">Douvres</placeName>
+               <lb/>part à <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="20:35:00">dix heures trente-cinq</time></date>. Je le pren-
+               <lb break="no"/>drai.</said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Ce soir même ? demanda <persName ref="#andrew_stuart">Stuart</persName>.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Ce soir même, répondit <persName ref="#phileas_fogg">Mr. Fogg</persName>. </said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true">-Donc, ajouta-t-il, en consultant un calen-
+               <lb break="no"/>drier de poche puisque c'est aujour-
+               <lb break="no"/>d'hui <date calendar="gregorian" type="fictive" when-iso="1872-10-02">mercredi 2 octobre</date>, je devrai être
+               <lb/>de retour à <placeName ref="#londres">Londres</placeName>, dans ce salon même 
+               <lb/>du <placeName ref="#reform-club">Reform-Club</placeName>, le <date calendar="gregorian" type="fictive" when-iso="1872-12-21">samedi 21 décembre</date>, à
+               <lb/><date calendar="gregorian" type="fictive" when-iso="1872-12-21"><time when="20:35:00">dix heures trente-cinq du soir</time></date>, faute de
+               <lb/>quoi les vingt mille livres déposées actu-
+               <lb break="no"/>ellement à mon crédit chez <placeName ref="#baring">Baring frères</placeName>
+               <lb/>vous appartiendront de fait et de droit,
+               <lb/>messieurs. Voici un chèque de pareille 
+               <lb/>somme. »</said>
+            </p>
+            <p>
+               <lb/>Un procès-verbal du pari fut fait, et si-
+               <lb break="no"/>gné sur-le-champ par les six cointéressés.
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName> était demeuré froid. I1 n'a-
+               <lb break="no"/>vait certainement pas parié pour gagner,
+               <lb/>et n'avait engagé ces vingt mille livres, -
+               <lb break="no"/>la moitié de sa fortune,-que parce qu'il 
+               <lb/>prévoyait qu'il pourrait avoir à dépenser
+               <lb/>l'autre pour mener à bien ce difficile, pour
+               
+               <cb n="9"/>
+               
+               <lb/>ne pas dire inexécutable projet. Quant à
+               <lb/>ses adversaires, eux, ils paraissaient
+               <lb/>émus, non pas à cause de la valeur de
+               <lb/>l'enjeu, mais parce qu'ils se faisaient une
+               <lb/>sorte de scrupule de lutter contre l'impo-
+               <lb break="no"/>ssible.
+            </p>
+            <p>
+               <lb/><date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="21:00:00">Neuf heures</time></date> sonnaient alors. On offrit à
+               <lb/> <persName ref="#phileas_fogg">Mr. Fogg</persName> de suspendre le whist afin qu'il
+               <lb/>pût faire ses préparatifs de départ.
+               <lb/><said  who="#phileas_fogg" aloud="true" direct="true">« Je suis toujours prêt !» répondit cet 
+               <lb/>impassible gentleman, et donnant les car-
+               <lb break="no"/>tes :</said>
+               <lb/><said  who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">« Je retourne carreau, dit-il. A vous de
+               <lb/>jouer, <persName ref="#andrew_stuart">monsieur Stuart</persName>. »</said>
+            </p>
+         </div>
+         <div n="IV" type="chapitre">
+            <head type="ordinal">
+               <lb/><num>IV</num>
+               <lb/><hi rend="petites_majuscules">DANS LEQUEL<persName ref="#phileas_fogg">PHILEAS FOGG</persName> STUPÉFIE <persName ref="#passepartout">PASSE-
+                  <lb break="no"/>PARTOUT</persName>, SON DOMESTIQUE.</hi>
+            </head>
+            <p>
+               <lb/><date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="21:25:00">A neuf heures vingt-cinq</time></date>, <persName ref="#phileas_fogg">Phileas Fogg</persName>,
+               <lb/>après avoir gagné une vingtaine de gui-
+               <lb break="no"/>nées au whist, prit congé de ses honora-
+               <lb break="no"/>bles collègues, et quitta le <placeName ref="#reform-club">Reform-Club</placeName>.
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="21:45:00">neuf heures quarante-cinq</time></date>, il ouvrait la
+               <lb/>porte de sa maison et rentrait chez lui.
+            </p>
+            <p>
+               <lb/><persName ref="#passepartout">Passepartout</persName>, qui avait consciencieuse
+               <lb/>ment étudié son programme, fut assez sur-
+               <lb break="no"/>pris en voyant <persName ref="#phileas_fogg">Mr. Fogg</persName>, coupable d'inexac-
+               <lb break="no"/>titude, apparaitre à cette heure insolite.
+               <lb/>Suivant la notice, le locataire de <placeName ref="#saville-row">Saville-
+               <lb break="no"/>row</placeName> ne devait rentrer qu'à minuit précis.
+            </p>
+            <p>
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName> était tout d'abord monté 
+               <lb/>à sa chambre, puis il appela :
+               <lb/><said  who="#phileas_fogg" aloud="true" direct="true">« <persName ref="#passepartout">Passepartout</persName>. »</said>
+               <lb/><persName ref="#passepartout">Passepartout</persName> ne répondit pas. Cet appel
+               <lb/>ne pouvait s'adresser à lui. Ce n'était pas 
+               <lb/>l'heure.
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">« <persName ref="#passepartout">Passepartout</persName>, »</said> reprit <persName ref="#phileas_fogg">Mr. Fogg</persName> sans 
+               <lb/>élever la voix davantage.
+               <lb/><persName ref="#passepartout">Passepartout</persName> se montra.
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">« C'est la deuxième fois que je vous 
+               <lb/>appelle, dit <persName ref="#phileas_fogg">Mr. Fogg</persName>.</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-Mais il n'est pas minuit, répondit
+               <lb/><persName ref="#passepartout">Passepartout</persName>, sa notice à la main.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Je le sais, reprit <persName ref="#phileas_fogg">Phileas Fogg</persName>, et je
+               <lb/>ne vous fais pas de reproche. Nous par-
+               <lb break="no"/>tons dans <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="21:35:00">dix minutes</time></date> pour <placeName ref="#douvres">Douvres</placeName>
+               <lb/>et <placeName ref="#calais">Calais</placeName>. »</said>
+               
+               <cb n="10"/>
+               
+               <lb/>Une sorte de grimace s'ébaucha sur la 
+               <lb/>ronde face du Français. Il était évident
+               <lb/>qu'il avait mal entendu.
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">« Monsieur se déplace? demanda-t-il.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Oui, répondit <persName ref="#phileas_fogg">Phileas Fogg</persName>. Nous al-
+               <lb break="no"/>lons faire le tour du monde. »</said>
+            </p>
+            <p>
+               <lb/><persName ref="#passepartout">Passepartout</persName>, l'œil démesurément ou-
+               <lb break="no"/>vert, la paupière et le sourcil surélevés,
+               <lb/>les bras détendus, le corps affaissé, pré-
+               <lb break="no"/>sentait alors tous les symptômes de l'éton-
+               <lb break="no"/>nement poussé jusqu'à la stupeur.
+            </p>
+            <p>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">« Le tour du monde! murmura-t-il.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-En <date dur="P80D">quatre-vingts jours</date>. répondit <persName ref="#phileas_fogg">M.
+               <lb/>Fogg</persName>. Ainsi, nous n'avons pas un instant 
+               <lb/>à perdre.</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-Mais les malles?. dit <persName ref="#passepartout">Passepartout</persName>, 
+               <lb/>qui balançait inconsciemment sa tête de 
+               <lb/>droite et de gauche.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Pas de malles, un sac de nuit seu-
+               <lb break="no"/>lement. Dedans, deux chemises de laine,
+               <lb/>trois paires de bas. Autant pour vous. Nous 
+               <lb/>achèterons en route. Vous descendrez mon
+               <lb/>makintosh et ma couverture de voyage. 
+               <lb/>Ayez de bonnes chaussures. D'ailleurs,
+               <lb/>nous marcherons peu ou pas. Allez. » </said>
+            </p>
+            <p>
+               <lb/><persName ref="#passepartout">Passepartout</persName> aurait voulu répondre. Il
+               <lb/>ne put. Il quitta la chambre de <persName ref="#phileas_fogg">Mr. Fogg</persName>,
+               <lb/>monta dans la sienne, tomba sur une 
+               <lb/>chaise, et employant une phrase assez 
+               <lb/>vulgaire de son pays :
+            </p>
+            <p>
+               <lb/><said who="#passepartout" aloud="false">« Ah bien se dit-il, elle est forte, celle-
+               <lb break="no"/>là! Moi qui voulais rester tranquille!… »</said>
+            </p>
+            <p>
+               <lb/>Et machinalement, il fit ses préparatifs 
+               <lb/>de départ. Le tour du monde en <date dur="P80D">quatre-
+               <lb break="no"/>vingts jours</date> ! Avait-il affaire à un fou? 
+               <lb/>Non. C'était une plaisanterie ? On allait à
+               <lb/><placeName ref="#douvres">Douvres</placeName>, bien. A <placeName ref="#calais">Calais</placeName>, soit. Après tout, 
+               <lb/>cela ne pouvait notablement contrarier le
+               <lb/>brave garçon, qui depuis cinq ans n'avait 
+               <lb/>pas foulé le sol de la patrie. Peut-être mê-
+               <lb break="no"/>me irait-on jusqu'à <placeName ref="#paris">Paris</placeName>, et, ma foi, il 
+               <lb/>reverrait avec plaisir la grande capitale.
+               <lb/>Mais, certainement, un gentleman aussi 
+               <lb/>ménager de ses pas, s'arrêterait là. Oui,
+               <lb/>sans doute, mais il n'en était pas moins
+               <lb/>vrai qu'il partait, qu'il se déplaçait, ce
+               <lb/>gentleman si casanier jusqu'alors!
+            </p>
+            <p>
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="22:00:00">dix heures</time></date>, <persName ref="#passepartout">Passepartout</persName> avait prépa-
+               <lb break="no"/>ré le modeste sac qui contenait sa garde-
+           
+               <cb n="11"/>
+            
+               <lb break="no"/>robe et celle, de son maître, et, l'esprit
+               <lb/>encore troublé, il quitta sa chambre dont 
+               <lb/>il ferma soigneusement la porte. Il rejoi-
+               <lb break="no"/>gnit <persName ref="#phileas_fogg">Mr. Fogg</persName>.
+            </p>
+            <p>
+               <lb/><persName ref="#phileas_fogg">Mr. Fogg</persName> était prêt. Il portait sous son 
+               <lb/>bras le <title level="j">Bradshaw's continental railway,
+               <lb/> steam transit and general guide</title>, qui devait 
+               <lb/>lui fournir toutes les indications nécessai-
+               <lb break="no"/>res à son voyage. Il prit le sac des 
+               <lb/>mains de <persName ref="#passepartout">Passepartout</persName>, l'ouvrit et y glissa
+               <lb/>une forte liasse de ces belles bank-notes 
+               <lb/>qui ont cours dans tous les pays.
+            </p>
+            <p>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">« Vous n'avez rien oublié? demanda-t-il.</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-Rien, monsieur.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Mon makintosch et ma couverture?</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-Les voici.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Bien, prenez ce sac. »
+               <lb/><persName ref="#phileas_fogg">Mr. Fogg</persName> remit le sac à <persName ref="#passepartout">Passepartout</persName>.</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">« Et ayez-en soin, ajouta-il. Il y a vingt
+               <lb/>mille livres dedans (500,000 francs). »</said> 
+            </p>
+            <p>
+               <lb/>Le sac faillit s'échapper des mains de 
+               <lb/><persName ref="#passepartout">Passepartout</persName>, comme si les vingt mille
+               <lb/>livres eussent été en or et pesé consi-
+               <lb break="no"/>dérablement.
+            </p>
+            <p>
+               <lb/>Le maître et le domestique descendirent 
+               <lb/>alors, et la porte de la rue fut fermée à
+               <lb/>double tour.
+            </p>
+            <p>
+               <lb/>Une station de voitures se trouvait à
+               <lb/>l'extrémité de <placeName ref="#saville-row">Saville-row</placeName>. <persName ref="#phileas_fogg">Mr. Phileas
+               <lb/>Fogg</persName> et son domestique montèrent dans 
+               <lb/>un cab qui se dirigea rapidement vers la 
+               <lb/>gare de <placeName ref="#gare_cgaring-cross">Charing-Cross</placeName>, à laquelle aboutit
+               <lb/>un des embranchements du South Eastern 
+               <lb/>railway.
+            </p>
+            <p>
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="22:13:00">dix heures treize</time></date>, le cab s'arrêta de-
+               <lb break="no"/>vant la grille de la gare. <persName ref="#passepartout">Passepartout</persName> 
+               <lb/>sauta à terre. Son maître le suivit et paya 
+               <lb/>le cocher.
+            </p>
+            <p>
+               <lb/>En ce moment, une pauvre mendiante,
+               <lb/>tenant un enfant à la main, pieds nus 
+               <lb/>dans la boue, coiffée d'un chapeau dépe-
+               <lb break="no"/>naillé auquel pendait une plume lamenta-
+               <lb break="no"/>ble, un châle en loques sur ses haillons,
+               <lb/>s'approcha de <persName ref="#phileas_fogg">Mr. Phileas Fogg</persName> et lui de-
+               <lb break="no"/>manda l'aumône.
+            </p>
+            <p>
+               <lb/><persName ref="#phileas_fogg">Phileas Fogg</persName> tira de sa poche les vingt
+               <lb/>guinées qu'il venait de gagner au whist, 
+               <lb/>et les présentant à la mendiante :
+            </p>
+            <p>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true">« Tenez, ma brave femme, dit-il, je suis
+                  
+               <cb n="12"/>
+                  
+               <lb/>content de vous avoir rencontrée ! » </said>
+            </p>
+            <p>
+               <lb/>Puis, il passa.
+            </p>
+            <p>
+               <lb/><persName ref="#passepartout">Passepartout</persName> eut comme une sensation
+               <lb/>d'humidité autour de la prunelle. Son
+               <lb/>maître avait fait un pas dans son cœur.
+            </p>
+            <p>
+               <lb/> <persName ref="#phileas_fogg">Mr. Fogg</persName> et lui entrèrent aussitôt dans la
+               <lb/>grande salle de la gare. Là, <persName ref="#phileas_fogg">Phileas Fogg</persName> 
+               <lb/>donna à <persName ref="#passepartout">Passepartout</persName> l'ordre de prendre 
+               <lb/>deux billets de première classe pour Pa-
+               <lb break="no"/>ris. Puis, se retournant, il aperçut ses cinq 
+               <lb/>collègues du <placeName ref="#reform-club">Reform-Club</placeName>.
+            </p>
+            <p>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#gauthier_ralph #andrew_stuart #thomas_flanagan #samuel_fallentin #john_sullivan">« Messieurs, je pars, dit-il, et les divers
+               <lb/>visas apposés sur un passe-port que j'em-
+               <lb break="no"/>porte à cet effet, vous permettront, au re-
+               <lb break="no"/>tour, de contrôler mon itinéraire.</said>
+               <lb/><said who="#gauthier_ralph" aloud="true" direct="true" toWhom="#phileas_fogg">-Oh! <persName ref="#phileas_fogg">Mr. Fogg</persName>, répondit poliment <persName ref="#gauthier_ralph">Gau-
+               <lb break="no"/>thier Ralph</persName>, c'était inutile. Nous nous en
+               <lb/>rapportons à votre honneur de gentleman !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#gauthier_ralph">-Cela vaut mieux ainsi, dit <persName ref="#phileas_fogg">Mr. Fogg</persName> </said>
+               <lb/><said who="#andrew_stuart" aloud="true" direct="true" toWhom="#phileas_fogg">-Vous n'oubliez pas que vous devez
+               <lb/>être revenu ? fit observer <persName ref="#andrew_stuart">Andrew 
+               <lb/>Stuart</persName>…</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#andrew_stuart">-Dans <date dur="P80D">quatre-vingts jours</date>, répondit 
+               <lb/><persName ref="#phileas_fogg">Mr. Fogg</persName>, le <date calendar="gregorian" type="fictive" when-iso="1872-12-21">samedi, 21 décembre 1872, à 
+               <lb/><time when="22:35:00">dix heures trente-cinq minutes du soir</time></date>. Au
+               <lb/>revoir, messieurs. »</said>
+            </p>
+            <p>
+               <lb/>A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="22:30:00">dix heures et demie</time></date>, <persName ref="#phileas_fogg">Phileas Fogg</persName> et
+               <lb/>son domestique prirent place dans le 
+               <lb/>même compartiment. A <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="22:35:00">dix heures trente-
+               <lb break="no"/>cinq</time></date>, un coup de sifflet retentit, et le train
+               <lb/>se mit en marche.
+            </p>
+            <p>
+               <lb/>La nuit était noire. Il tombait une pluie
+               <lb/>fine. <persName ref="#phileas_fogg">Phileas Fogg</persName>, accoté dans son coin,
+               <lb/>ne parlait pas. <persName ref="#passepartout">Passepartout</persName>, encore aba-
+               <lb break="no"/>sourdi, pressait machinalement contre lui 
+               <lb/>le sac aux bank-notes.
+            </p>
+            <p>
+               <lb/>Mais le train n'avait pas dépassé <placeName ref="#sydenham">Syden-
+               <lb break="no"/>ham</placeName>, que <persName ref="#passepartout">Passepartout</persName> poussait un véri-
+               <lb break="no"/>table cri de désespoir!
+            </p>
+            <p>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">« Qu'avez-vous ? demanda <persName ref="#phileas_fogg">Mr. Fogg</persName>.</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-Il y a… que… dans ma précipitation…
+               <lb/>mon trouble… j'ai oublié…</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Quoi?</said>
+               <lb/><said who="#passepartout" aloud="true" direct="true" toWhom="#phileas_fogg">-D'éteindre le bec de gaz de ma cham-
+               <lb break="no"/>bre !</said>
+               <lb/><said who="#phileas_fogg" aloud="true" direct="true" toWhom="#passepartout">-Eh bien, mon garçon, répondit froide-
+               <lb break="no"/>ment <persName ref="#phileas_fogg">Mr.Fogg</persName>, il brûle à votre compte !»</said> 
+               <lb/><hi rend="majuscules"><name ref="#jules_verne">JULES VERNE</name></hi>.
+               <lb/><hi rend="italic">(A suivre.)</hi>
+            </p>
+         </div>
+      </body>
+   </text>
+</TEI>

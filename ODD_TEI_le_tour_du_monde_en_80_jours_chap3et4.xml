@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI 
+   xmlns="http://www.tei-c.org/ns/1.0" 
+   xmlns:s="http://purl.oclc.org/dsdl/schematron" 
+   xmlns:sch="http://www.ascc.net/xml/schematron" 
+   xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Guide d’encodage pour <hi rend="italic">Le Tour du monde en quatre-vingts jours</hi> de Jules Verne</title>
+            <title type="sub">Schéma créé avec ODD by Example</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodage réalisé par Laura Chevalier dans le cadre du Master TNAH pour le cours de TEI-XML de Ségolène Albouy.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Schéma créé avec ODD by Example</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1>
+            <head>Note d'introduction</head>
+            <p>Ce guide explicite et documente les choix retenus en termes d’encodage et présente également les exploitations scientifiques possibles de l'édition.   
+               Cette dernière concerne uniquement les chapitres <hi rend="bold">III</hi> et <hi rend="bold">IV</hi> du roman de Jules Verne, <hi rend="italic">Le Tour du monde en quatre-vingts jours</hi>. 
+               L'œuvre fut originalement publiée en feuilletons dans <hi rend="italic">Le Temps</hi> du 6 novembre au 22 décembre 1872, puis reprise en volume l'année suivante chez Hetzel à Paris. 
+            </p>
+         </div1> 
+            
+          <div1>
+             <head>Enjeux scientifiques et intérêts de l'édition</head>
+               <div2>
+                <head>La presse au coeur de l'extrait</head>
+                <p>Un des objectifs principaux de cette édition a été de rendre fidèlement le texte d’après sa publication originale, tel qu’il est paru dans le journal <hi rend="italic">Le Temps</hi>. Ce choix éditorial marque l’importance de la forme - ici celle du <hi rend="bold">roman-feuilleton</hi> - forme qu’impose une publication dans les colonnes d’un titre de presse. 
+                   Le feuilleton d’un journal est avant tout une rubrique qui se situe en bas de page d’un quotidien et qui est séparée du reste du texte, en général plus sérieux et politique, par une fine ligne. Cet élément, également appelé « rez-de-chaussée », est un des premiers rubricages clairs dans la presse de l’époque. 
+                   On y trouve surtout de la critique littéraire, artistique et dramatique. Au cours du siècle, l’utilisation de cette rubrique se spécialise : on y fait paraître des extraits littéraires, puis des romans dans leur totalité, publiés par tranches, en parallèle d’articles de critique. </p>
+                <p>Le roman-feuilleton est alors caractérisé par une publication morcelée, par la mention <hi rend="italic">« À suivre »</hi> ou encore <hi rend="italic">« La suite demain »</hi> et par sa localisation dans la section « feuilleton » du quotidien. En même temps qu’il se développe, le genre se normalise. Certains textes sont écrits spécifiquement pour ce mode de publication : souvent longs, 
+                   ce sont des romans populaires qui exploitent le suspens des interruptions programmées, et n’hésitent pas à ajouter des péripéties, à réutiliser des personnages d’un roman à l’autre, afin de conserver l’attention des lecteurs : Jules Verne est un excellent exemple de ces pratiques. Le XIX<hi rend="superscript">e</hi> siècle est la période du <hi rend="bold">triomphe du roman</hi>,
+                   mais aussi de la <hi rend="bold">montée en puissance de la presse</hi> : c’est l’âge « médiatique », celui où les journaux se multiplient, sont publiés avec d’importants tirages et envahissent le quotidien de leurs lecteurs. Ces deux phénomènes sont liés de bien des manières, et l’un de ces éléments communs est le roman-feuilleton. </p> 
+                <p>Ainsi, c'est pour toutes ces raisons, que nous avons choisi de nous attarder sur la forme qu'impose une publication dans la presse mais aussi sur la place qu'elle occupe dans le contenu textuel. Il est en effet fait à plusieurs reprises mention de titres de presse, de journaux britanniques : par-là, Jules Verne décrit ses personnages comme de fervents lecteurs de presse
+                   au fait des derniers évènements du pays voire du monde mais en profite aussi pour rendre hommage au média qui diffuse ses textes et lui permet d'acquérir une certaine notoriété. 
+               </p>
+             </div2>
+               <div2>
+                  <head>Vers un calendrier précis du voyage de Phileas</head>
+                <p>Le <hi rend="italic">Tour du monde en quatre-vingts jours</hi> est avant tout une histoire de course contre le temps. Il est question d’un voyage international à l’itinéraire précisément défini et dont les étapes ont une durée précise, étapes et durées annoncées dans le <hi rend="italic">Morning Chronicle</hi>. Ainsi, il était nécessaire d’effectuer un travail de balisage sur les noms de lieux, notamment ceux constituant une étape du voyage de Phileas, ainsi que sur les dates et les durées. 
+                   Ces données géographiques et temporelles pourraient permettre, par exemple, de proposer une visualisation sur une carte du voyage de Phileas Fogg et de Passepartout.</p>
+                <p>L’œuvre de Jules Verne (1828-1905) est actuellement l’une des plus lues et des plus traduites au monde. Parmi les 80 romans et autres nouvelles que l’auteur a publiés, 62 composent le corpus des <hi rend="italic">Voyages extraordinaires</hi>. En son temps déjà, l’écrivain revendique l’appellation de <hi rend="italic">romans géographiques</hi> pour qualifier ses écrits, œuvre majeure dans la transmission d’un savoir géographique grandissant à une époque marquée par les découvertes, 
+                   les voyages, les explorations. Ainsi, tout le travail de balisage mentionné précédemment peut permettre l’étude de la <hi rend="bold">dimension fondamentalement géographique</hi> du <hi rend="italic">Tour du monde en quatre-vingts jours</hi> mais aussi, de façon plus générale, de l’ensemble des écrits verniens.</p>
+             
+             </div2>
+               <div2>
+               <head>Le dialogue chez Jules Verne</head>
+               <p>Enfin, le dernier intérêt de cette édition repose sur les éléments de dialogue pour lesquels un balisage a été mis en place, permettant d’analyser très précisément le discours : qui parle, à qui et de quelle façon. Cela permet, de fait, d’en apprendre davantage sur les personnages que ce qui est dit seulement par le narrateur : le « parler » d’un personnage nous en apprend énormément sur lui et permet au lecteur de compléter le portrait qu’il s’en fait, notamment sur sa personnalité, son origine sociale et géographique, etc. Il est possible d'étudier le discours d’un point de vue plus mathématique et statistique : qui parle à qui et à quelle fréquence, qui répond à qui et à quelle fréquence, qui parle beaucoup, qui ne parle pas, etc. Cette possibilité permet l'étude des relations entre personnages et l'implication de tel ou tel personnage dans le récit par exemple. </p>
+               <p>Au début du XIX<hi rend="superscript">e</hi> siècle, le dialogue est incontestablement imprégné par la rhétorique. C’est un morceau d’éloquence, tantôt compris comme une partie du discours, tantôt comme une figure du récit. Ainsi, à l’instar de Chateaubriand, Jules Verne considère que le dialogue est un morceau du récit, à la fois important, enthousiasmant, moment que l'on retient, mais aussi moment isolé, en rupture, fragment de texte. Le travail de balisage du dialogue réalisé dans cette édition permet de mettre en lumière cette conception du dialogue isolé de Jules Verne dans l’extrait et plus précisément dans son œuvre intégrale. On remarque que les dialogues verniens ont effectivement un effet de masse, de bloc ajouté à cela les tirets qui rendent cet isolement plus visible encore. Tout ce travail effectué sur le discours permet ainsi, en plus d’obtenir des informations sur les personnages du récit, d’en obtenir sur l’auteur du texte, sur ses habitudes et choix d’écriture et dans une mesure plus large, sur le courant littéraire dans lequel il s’inscrit. 
+               </p>
+                 
+            </div2>
+         </div1>
+         <div1>
+            <head>Choix d'encodage</head>
+            <div2>
+               <head>Le &lt;teiHeader&gt;</head>
+               <div3>
+                  <head>Le &lt;fileDesc&gt;</head>
+                  <p>Le &lt;fileDesc&gt; contient les éléments se rapportant aux métadonnées du texte encodé. Les données présentes dans cette balise se rapportent notamment à l'oeuvre, à l'auteur et à la publication originale en feuilletons. Une partie du &lt;fileDesc&gt;, &gt;editionStmt&gt;, est réservée aux données relatives à l'édition XML-TEI que nous avons produite, même si l'élément &lt;encodingDesc&lt;, en dehors du &lt;fileDesc&gt;, la complète.</p>
+               </div3>
+               <div3>
+                  <head>L'&lt;encodingDesc&gt;</head>
+                  <p>L'&lt;encodingDesc&gt; contient des informations sur l'édition réalisée en XML-TEI et sur les documents encodés. C'est ici que l'on justifie rapidement ses choix éditoriaux. Dans notre cas, l'encodage a été réalisé à partir de la numérisation disponible sur Gallica et
+                     transcrit fidèlement, césures de fin de ligne comprises. On choisit de représenter la structure visuelle du texte, qu'une publication
+                     dans un journal impose, avec conservation donc des colonnes, pages et césures de mots. Le texte a été récupéré grâce à l'OCR présent sur Gallica mais a dû être corrigé à de nombreuses reprises.</p>
+               </div3>
+               <div3>
+                  <head>Le &lt;profileDesc&gt;</head>
+                  <p>Le &lt;profileDesc&gt; sert à décrire certains des éléments non-bibliographiques du texte. C'est dans cette balise que nous retrouvons le &lt;particDesc&gt; et le &lt;settingDesc&gt;, dont l'importance est majeure pour les enjeux et intérêts scientifiques de l'édition mentionnés plus haut.</p>
+                  <p>Le &lt;particDesc&gt; regroupe la liste des personnages de l'extrait, au moyen de la balise &gt;listPerson&gt;. L'élément &lt;person&gt; contient obligatoirement une balise &lt;persName&gt; pour le nom du personnage, une balise &lt;sex&gt; pour laquelle on force l'entrée d'une valeur dans l'attribut @value et &lt;note&gt; afin de renseigner quelques informations non balisées supplémentaires sur le personnage. &lt;person&gt; a obligatoirement un attribut @xml:id que l'on utilisera plus tard dans le texte afin d'identifier un personnage (au moyen d'une @ref="#xml:id_du_personnage"). Choisissons d'illuster cet balise avec la présentation que nous avons faite de Phileas Fogg, le personnage principal du récit : </p>
+                     <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <person xml:id="phileas_fogg">
+                           <persName>Phileas Fogg</persName>
+                           <sex value="H"/>
+                           <note>Phileas Fogg est le personnage principal du roman feuilleton. Il vit à Londres, est âgé
+                              d'environ 40 ans. Gentleman, il fait partie de l'<foreign xml:lang="en">upper middle class</foreign>, la frange la plus aisée de 
+                              la classe moyenne. Sa fortune s'estime à environ 40 000 livres sterling, dont il parie la moitié sur
+                              son tour du monde avec les habitués du Reform-Club et dépense l'autre moitié en frais de voyage.</note>
+                        </person>                     
+                     </egXML></p>
+                  <p>Le &lt;settingDesc&gt; contient une liste d'éléments décrivant les lieux mentionnés dans le récit au moyen de &lt;listPlace&gt; et des balises &lt;place&lt; qui la compose :</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <place xml:id="saville-row">
+                        <placeName type="rue" xml:lang="en">
+                           <name>Saville-Row</name>
+                           <address>
+                              <country key="UK"/>
+                              <settlement type="city">Londres</settlement>
+                              <street>No 7, Saville-Row</street>  
+                              <postCode>W1S 2ER</postCode>  
+                           </address>
+                        </placeName>
+                        <note>Rue où réside <persName ref="phileas_fogg">Phileas Fogg</persName>.</note>
+                     </place>
+                  </egXML></p>   
+                  <p>&lt;place&gt; doit obligatoirement avoir un attribut @xml:id renseigné afin que les noms de lieu dans le texte soient correctement référencés. Il a été choisi, pour chaque nom de lieu, de le faire figurer dans le &lt;teiHeader&gt;, même pour les lieux hors de l'itinéraire du tour du monde de Phileas Fogg. Pour les lieux-étapes du voyage, nous avons ajouté une balise &lt;geo&lt; pour disposer de leurs coordonnées géographiques en vue d'une éventuelle exploitation pour une visualisation sur carte du voyage de Phileas et de Passepartout.</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <place xml:id="new-york">
+                        <placeName><settlement type="city" key="USA">New-York</settlement></placeName>
+                        <location><geo>40.712728 -74.006015</geo></location>
+                     </place>
+                  </egXML></p>
+                  <p>Les distances étant forcément associées au dates, heures et durées, nous avons choisi de les baliser. Les durées prévisionnelles du tour du monde annoncées dans le <hi rend="italic">Morning Chronicle</hi> sont balisées avec l'élément &lt;date&gt; associé à l’attribut @dur dont les valeurs sont spécifiées dans la documentation TEI. Les dates du texte sont balisées avec le même élément mais associé aux attributs suivants : 
+                     @type="fictive" pour signifier que la date est issue de l’œuvre et n’est pas réelle, 
+                     @calendar="gregorien" pour indiquer dans quel calendrier nous nous trouvons et @when-iso="année-mois-jour" (norme ISO 8601) pour avoir une donnée date exploitable par une machine. Ci-dessous un exemple de date dite <hi rend="italic">réelle</hi> et un autre emprunté à la fiction :</p> 
+                     <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <date when-iso="1872-11-07">7 NOVEMBRE</date>
+                     </egXML></p>
+                     <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        Mais, le <date calendar="gregorian" type="fictive" when-iso="1872-09-29">29 septembre</date>, les choses ne se 
+                        <lb/>passèrent pas tout à fait ainsi,[...]. Jules Verne, <hi rend="italic">Le Tour du monde en quatre-vingts jours</hi>
+                     </egXML></p>
+                  <p>
+                     Gardons à l'esprit que <hi rend="italic">Le Tour du monde en quatre-vingts jours</hi> est basé sur une <hi rend="bold">plaisanterie cosmographique</hi>, à savoir le gain d'un jour pour un voyageur faisant le tour du monde par l'est. C'est un phénomène familier aux voyageurs aériens de notre époque, rompus aux "jets-lags", mais passé inaperçu par Phileas dont le voyage s'étalait sur presque 3 mois. Les heures mentionnées tout au long du roman ont pour référentiel le fuseau horaire londonien. Il serait intéressant, au cours du récit, de convertir ces heures dans le fuseau horaire local afin de nous-mêmes constater ce gain d'une journée. Dans un entretien avec Tracey Greaves, Jules Verne a d'ailleurs déclaré que c'est bien ce phénomène qui a motivé l'écriture de ce roman : <quote><hi rend="italic">Avec un tel dénouement sous la main, je me suis déterminé à écrire le roman. N'était-ce pour ce dénouement, je ne pense pas que je l'aurais écrit.</hi></quote> (<hi rend="italic">The World</hi>, 8 décembre 1889.) Intéressant donc de le mettre en évidence dans les prochaines pages du récit en convertissant les données dans &lt;time&gt; dans le fuseau horaire associées aux coorodnnées géographiques contenues dans &lt;geo&gt;.
+                     
+                     
+                  </p>
+               </div3>
+               
+            </div2>
+            <div2>
+               <head>Le texte</head>
+               <div3>
+                  <head>Le maintien de la structure : les balises &lt;pb&gt;, &lt;cb&gt; et &lt;lb&gt;</head>
+                  <p>Afin de conserver la structure et la forme du texte, tel qu'il est paru en 1872 en feuilletons dans <hi rend="italic">Le Temps</hi>, il nous a fallu user d'éléments particuliers. &lt;pb&gt; permet le changement de page, &lt;cb&gt; permet le changement de colonnes et &lt;lb&gt; le changement de lignes. Une publication dans les colonnes d'un journal impose une césure fréquente des termes du récit. Ainsi, dès lors qu'un mot commence sur une ligne et se termine sur une autre, le &lt;lb&gt; a un attribut @break="no".</p>
+               </div3>
+               <div3>
+                  <head>La balise &lt;title&gt;</head>
+                  <p>Afin de déterminer la place et l'importance de la presse chez nos gentlemens anglais mais aussi dans l'oeuvre de Jules Verne, il semblait intéressant d'isoler les titres de presse mentionnés dans l'extrait au moyen d'un élément qui se distingue. On a ainsi choisi l'élément &lt;title&gt; associé à un attribut @level="j", la valeur "j" se rapportant à un journal. La note de bas de page renvoyant au <hi rend="italic">Temps</hi> du 6 novembre n'est donc pas balisée avec l'élément &lt;title&gt; pour ne pas fausser les résultats mais avec &lt;hi&gt; associé à l'attribut @rend="italic" pour rendre une mise en forme correcte du titre néanmoins. L'attribut @level peut être couplé à un attribut @xml:lang afin de situer géographiquement les titres de presse.</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <lb/>[...]Là, un domestique lui
+                     <lb/>remit le <title level="j" xml:lang="en">Times</title> non coupé,
+                  </egXML></p>
+               </div3>
+               <div3>
+                  <head>L'élément &lt;said&gt; pour l'analyse des discours</head>
+                  <p>Nous l'avons vu, un des enjeux scientifiques de cette édition XML-TEI concerne les dialogues. On les a signifié au moyen d'une balise &lt;said&gt; associée de façon obligatoire aux attributs @who, @aloud et @direct afin de connaître, pour chaque partie du discours, qui parle et comment. L'attribut @who appelle une valeur #xml:id_d'un_personnage, tandis que les attributs @aloud et @direct ont une liste prédéfinie de valeur de boléens parmi lesquelles il faut choisir. @aloud="true" signifie qu'une parole a été prononcée ou exprimée, tandis qu'un @aloud="false" fait davantage référence à une pensée non exprimée clairement par le geste ou la voix.</p>
+                     <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <lb/><said who="#passepartout" aloud="false">« Ah bien se dit-il, elle est forte, celle-
+                        <lb break="no"/>là! Moi qui voulais rester tranquille!… »</said>
+                        </egXML></p>
+                     <p>
+                     Cela traduit le fait que l'élément &lt;said&gt; concerne une parole ou une pensée. L'attribut @direct permet de préciser si le discours est direct ou indirect, dans le premier cas il a une valeur @direct="true". Nous avons choisi, pour cette édition, de ne baliser que les discours directs, donc introduits par un tiret ou des guillemets pour les raisons citées plus haut, d'analyse du discours direct essentiellement.  </p>
+                  <p>La balise &lt;said&gt; peut avoir un attribut facultatif @toWhom="#xml:id_du_personnage" qui désigne le ou les personnages à qui le locuteur parle. Elle n'est pas obligatoire car il arrive que l'auditeur ne soit pas clairement identifié. Néanmoins, à chaque fois qu'il a été possible de le reconnaître, on a ajouté son xml:id à l'attribut @toWhom.
+                  </p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <said who="#phileas_fogg" aloud="true" direct="true" toWhom="#john_sullivan">-Je sauterai mathématiquement.</said>
+                     <lb/><said who="#john_sullivan" aloud="true" direct="true" toWhom="#phileas_fogg">-C'est une plaisanterie !</said>
+                  </egXML></p>
+              
+               </div3>
+               <div3>
+                  <head>Les références aux personnages &lt;persName&gt; et aux lieux &lt;placeName&gt;</head>
+                  <p>Nous avons balisé les mentions directes de personnages et de lieux. Les éléments &lt;persName&gt; contiennent à chaque fois le nom du personnage en question dans le texte. Un attribut @ref l'accompagne de façon obligatoire, et sa valeur renvoie aux personnages déclarés dans la &lt;listPerson&gt;.</p>
+                  <p>Les lieux subissent le même traitement dans le texte, à l'exception près qu'on utilise l'élément &lt;placeName&gt;.</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <persName ref="#phileas_fogg">Phileas Fogg</persName> avait quitté sa maison de
+                  <placeName ref="#saville-row">Saville-row</placeName>
+                  </egXML></p>
+                </div3>
+               <div3>
+                  <head>Les références aux dates et heures</head>
+                  <p>Nous avons vu l'importance des éléments &lt;date&gt; et des attributs @type, @calender et@when-iso pour exprimer une date fictive dans le &lt;teiHeader&gt;. Dans cette idée d’exploitation, les heures du texte ont aussi été balisées grâce à &lt;time&gt; et son attribut obligatoire @when="heure:minutes:secondes". Cet élément est toujours contenu dans une balise &lt;date&gt; afin d’avoir l’information date-heure toujours couplée dans le récit.</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <lb/>{...] La
+                     <lb/>lecture de ce journal occupa <persName ref="#phileas_fogg">Phileas Fogg</persName>
+                     <lb/>jusqu'à <date calendar="gregorian" type="fictive" when-iso="1872-10-02"><time when="15:45:00">trois heures quarante-cinq</time></date>,
+                  </egXML></p>
+              </div3>
+               
+               <div3>
+                  <head>La balise &lt;foreign&gt;</head>
+                  <p>Certains mots d'origine anglaise ont été mis entre guillemets dans la publication originale du texte. Nous avons choisi de ne pas conserver ces guillemets
+                     mais de baliser les termes avec un élément &lt;foreign&gt;. A l'inverse, certains autres termes d'origine anglaise, type "whist", ne sont pas mis entre guillemets dans le récit. Pour ces mots, et bien qu'ils soient d'origine étrangère, nous choisirons de ne pas utiliser la balise &lt;foreign&gt;. Comme ce ne sont que des mots anglais dans les chapitres III et IV, nous avons choisi de forcer l'attribut @xml:lang="fr". Pour la suite du récit, il serait intéressant de ne pas forcer la langue anglaise afin que l'on obtienne un répertoire de termes étrangers et voir ainsi comment, au fil du voyage, la culture et la langue étrangères s'immiscent dans le récit.</p>
+                  <p><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <lb/>[...] ce gentleman se
+                     <lb/>leva et se dirigea vers le grand salon,
+                     <lb/>somptueux <foreign xml:lang="en">hall</foreign> orné de peintures ri-
+                     <lb break="no"/>chement encadrées.
+                  </egXML></p>
+               </div3>
+               
+             </div2>  
+         </div1>
+         <div1>
+            <schemaSpec ident="oddbyexample" start="TEI ">
+               <moduleRef key="tei"/>
+               <!--Checking module textcrit-->
+               <classRef key="att.textCritical"/>
+               <classRef key="model.rdgLike"/>
+               <classRef key="model.rdgPart"/>
+               <classSpec ident="att.textCritical" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="varSeq" mode="delete"/>
+                     <attDef ident="require" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module msdescription-->
+               <classRef key="model.physDescPart"/>
+               <!--Checking module namesdates-->
+               <classRef key="att.datable.iso"/>
+               <classRef key="model.persNamePart"/>
+               <moduleRef key="namesdates"
+                          include="orgName persName surname forename placeName country region settlement district geogName geo listPerson listPlace location person place sex"/>
+               <elementSpec ident="orgName" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="banque"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="persName" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="surname" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="forename" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="placeName" mode="change">
+                  <attList>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="continent"/>
+                           <valItem ident="rue"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Oblige à avoir un attribut key -->
+               <elementSpec ident="country" mode="change">
+                  <attList>
+                     <attDef ident="key" usage="req" mode="change"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="region" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!-- Oblige à avoir un attribut type -->
+               <elementSpec ident="settlement" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="open">
+                           <valItem ident="city"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="district" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="change" usage="req">
+                        <valList mode="add" type="closed">
+                           <valItem ident="arrondissement"/>
+                           <valItem ident="quartier"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="geogName" mode="change">
+                  <attList>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="geo" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Uniquement des person dans listPerson -->
+               <elementSpec ident="listPerson" mode="change">
+                  <content>
+                     <elementRef key="person" minOccurs="1" maxOccurs="unbounded"/>
+                  </content>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="listPlace" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="location" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Dans person on a persName, sex et note. Dans cet ordre -->
+               <elementSpec ident="person" mode="change">
+                  <content>
+                     <sequence>
+                        <elementRef key="persName"/>
+                        <elementRef key="sex"/>
+                        <elementRef key="note"/>
+                     </sequence>
+                  </content>
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="sex" mode="delete"/>
+                     <attDef ident="gender" mode="delete"/>
+                     <attDef ident="age" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+               <!-- Un xml:id est obligatoire -->
+                     <attDef ident="xml:id" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Dans place un xml:id est obligatoire -->
+               <elementSpec ident="place" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="xml:id" usage="req" mode="change"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Attribut value obligatoire dans sex avec deux valeurs possibles H ou F -->
+               <elementSpec ident="sex" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="value" mode="change" usage="req">
+                        <valList>
+                           <valItem ident="H"/>
+                           <valItem ident="F"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <classSpec ident="att.datable.iso" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="notBefore-iso" mode="delete"/>
+                     <attDef ident="notAfter-iso" mode="delete"/>
+                     <attDef ident="from-iso" mode="delete"/>
+                     <attDef ident="to-iso" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module dictionaries-->
+               <classRef key="att.lexicographic"/>
+               <classRef key="model.entryLike"/>
+               <classRef key="model.formPart"/>
+               <classRef key="model.gramPart"/>
+               <classRef key="model.lexicalRefinement"/>
+               <classRef key="model.morphLike"/>
+               <classRef key="model.ptrLike.form"/>
+               <moduleRef key="dictionaries" include="lang"/>
+               <elementSpec ident="lang" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <classSpec ident="att.lexicographic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="expand" mode="delete"/>
+                     <attDef ident="split" mode="delete"/>
+                     <attDef ident="value" mode="delete"/>
+                     <attDef ident="location" mode="delete"/>
+                     <attDef ident="mergedIn" mode="delete"/>
+                     <attDef ident="opt" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module tagdocs-->
+               <classRef key="att.combinable"/>
+               <classRef key="att.identified"/>
+               <classRef key="model.contentPart"/>
+               <classSpec ident="att.combinable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="mode" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.identified" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="ident" mode="delete"/>
+                     <attDef ident="predeclare" mode="delete"/>
+                     <attDef ident="module" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.dimensions" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="unit" mode="delete"/>
+                     <attDef ident="quantity" mode="delete"/>
+                     <attDef ident="extent" mode="delete"/>
+                     <attDef ident="precision" mode="delete"/>
+                     <attDef ident="scope" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.damaged" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="agent" mode="delete"/>
+                     <attDef ident="degree" mode="delete"/>
+                     <attDef ident="group" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable.w3c" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="notBefore" mode="delete"/>
+                     <attDef ident="notAfter" mode="delete"/>
+                     <attDef ident="from" mode="delete"/>
+                     <attDef ident="to" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.datable" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="period" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.divLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="org" mode="delete"/>
+                     <attDef ident="sample" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.media" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="width" mode="delete"/>
+                     <attDef ident="height" mode="delete"/>
+                     <attDef ident="scale" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.naming" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="role" mode="delete"/>
+                     <attDef ident="nymRef" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.typed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="subtype" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.pointing" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="targetLang" mode="delete"/>
+                     <attDef ident="evaluate" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.pointing.group" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="domains" mode="delete"/>
+                     <attDef ident="targFunc" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.segLike" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="function" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.timed" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="start" mode="delete"/>
+                     <attDef ident="end" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.transcriptional" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="status" mode="delete"/>
+                     <attDef ident="cause" mode="delete"/>
+                     <attDef ident="seq" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <classSpec ident="att.personal" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="full" mode="delete"/>
+                     <attDef ident="sort" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module core-->
+               <moduleRef key="core"
+                          include="p foreign hi said name address street postCode num date time head note pb lb cb author respStmt resp title publisher biblScope pubPlace"/>
+               <elementSpec ident="p" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Règle pour foreign qui doit avoir un xml:lang de 2 caractères faisant référence à une langue -->
+               <elementSpec ident="foreign" mode="change">
+                  <constraintSpec scheme="schematron" ident="cle">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:assert test="string-length(./@xml:lang) = 2">
+                           La clé de la langue doit être composé de 2 caractères.
+                        </s:assert>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="xml:lang" mode="change" usage="req"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="hi" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Deux régles quasi identique qui vérifie si les @who et @toWhom pointe sur un xml:id dans listPerson -->
+               <elementSpec ident="said" mode="change">
+                  <constraintSpec scheme="schematron" ident="who_valeur">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:let name="qui" value="for $qui in tokenize(./@who,'\s') return $qui"/>
+                        <s:assert test="every $q in $qui satisfies substring-after($q,'#') = //tei:listPerson/tei:person/@xml:id">
+                           La valeur de @who doit faire référence à un xml:id d'un &lt;person&gt; définit dans listPerson.
+                        </s:assert>
+                     </constraint>
+                  </constraintSpec>
+                  <constraintSpec scheme="schematron" ident="toWhom_valeur">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:let name="qui" value="for $qui in tokenize(./@toWhom,'\s') return $qui"/>
+                        <s:assert test="every $q in $qui satisfies substring-after($q,'#') = //tei:listPerson/tei:person/@xml:id">
+                           La valeur de @toWhom doit faire référence à un xml:id d'un &lt;person&gt; définit dans listPerson.
+                        </s:assert>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                 <!-- Attribut who, aloud et direct obligatoire, toWhom optionnel -->
+                     <attDef ident="who" mode="change" usage="req"/>
+                     <attDef ident="aloud" mode="change" usage="req"/>
+                     <attDef ident="towhom" mode="change" usage="opt"/>
+                     <attDef ident="direct" mode="change" usage="req">
+                        <valList>
+                           <valItem ident="true"/>
+                           <valItem ident="false"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
+               <elementSpec ident="name" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="journal"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="address" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="street" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="postCode" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="num" mode="change">
+                  <attList>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="ordinal"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="value" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="ordinal"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <!-- Règle sur date qui contraint la présence d'un des deux attributs dur ou when-iso -->
+               <elementSpec ident="date" mode="change">
+                  <constraintSpec scheme="schematron" ident="required">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:assert test="./@when-iso or ./@dur">
+                           Doit avoir un atribut dur ou un atribut when-iso.
+                        </s:assert>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="dur" mode="add"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="fictive"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Règle qui oblige un attribut when quand time est dans date -->
+               <elementSpec ident="time" mode="change">
+                  <constraintSpec scheme="schematron" ident="si_date_when">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:rule context="//tei:body//tei:date/tei:time">
+                           <s:assert test="./@when">
+                              Quand time est dans &lt;date&gt; il doit avoir un @when.
+                           </s:assert>
+                        </s:rule>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="dur" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="head" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="ordinal"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="place" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="top-left"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="note" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="place" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="bottom"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="target" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="pb" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="break" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="lb" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="break" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="no"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="cb" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                     <attDef ident="break" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="author" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="respStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="resp" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               
+               <!-- Oblige @level quand title est dans un paragraphe du text et impose la valeur à 'j' -->
+               <elementSpec ident="title" mode="change">
+                  <constraintSpec scheme="schematron" ident="lvlJ">
+                     <constraint xmlns:tei="http://www.tei-c.org/ns/1.0">
+                        <s:rule context="//tei:body/p//tei:title">
+                           <s:assert test="@level and ./@level='j'">
+                              Quand title est dans le text @level a pour unique valeur j.
+                           </s:assert>
+                        </s:rule>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="level" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="a"/>
+                           <valItem ident="j"/>
+                           <valItem ident="m"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="sub"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="sub"/>
+                        </valList>
+                     </attDef>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="publisher" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="biblScope" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="unit" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="book"/>
+                           <valItem ident="chapter"/>
+                           <valItem ident="page"/>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="pubPlace" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module figures-->
+               <!--Checking module header-->
+               <moduleRef key="header"
+                          include="teiHeader fileDesc titleStmt editionStmt edition publicationStmt distributor availability licence seriesStmt sourceDesc biblFull encodingDesc projectDesc profileDesc creation"/>
+               <elementSpec ident="teiHeader" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="fileDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="titleStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="editionStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="edition" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="publicationStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="distributor" mode="change">
+                  <attList>
+                     <attDef ident="key" mode="delete"/>
+                     <attDef ident="ref" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="availability" mode="change">
+                  <attList>
+                     <attDef ident="status" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="licence" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="seriesStmt" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="sourceDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="biblFull" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="encodingDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="projectDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="profileDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="creation" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="calendar" mode="delete"/>
+                     <attDef ident="when" mode="delete"/>
+                     <attDef ident="when-iso" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <!--Checking module gaiji-->
+               <!--Checking module verse-->
+               <!--Checking module transcr-->
+               <classRef key="att.global.facs"/>
+               <!--Checking module linking-->
+               <!--Checking module analysis-->
+               <classRef key="att.linguistic"/>
+               <classSpec ident="att.linguistic" type="atts" mode="change">
+                  <attList>
+                     <attDef ident="lemma" mode="delete"/>
+                     <attDef ident="lemmaRef" mode="delete"/>
+                     <attDef ident="pos" mode="delete"/>
+                     <attDef ident="msd" mode="delete"/>
+                     <attDef ident="join" mode="delete"/>
+                  </attList>
+               </classSpec>
+               <!--Checking module textstructure-->
+               <moduleRef key="textstructure" include="TEI text body div"/>
+               <elementSpec ident="TEI" mode="change">
+                  <attList>
+                     <attDef ident="version" mode="delete"/>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="text" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="body" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="div" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                     <attDef ident="type" mode="change">
+                        <valList mode="add" type="closed">
+                           <valItem ident="chapitre"/>
+                        </valList>
+                     </attDef>
+                  </attList> 
+               </elementSpec>
+               <!--Checking module corpus-->
+               <moduleRef key="corpus" include="particDesc settingDesc"/>
+               <elementSpec ident="particDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+               <elementSpec ident="settingDesc" mode="change">
+                  <attList>
+                     <attDef ident="facs" mode="delete"/>
+                  </attList>
+               </elementSpec>
+            </schemaSpec>
+         </div1>
+      </body>
+   </text>
+</TEI>
