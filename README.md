@@ -9,4 +9,4 @@ L'encodage en `XML-TEI` du roman-feuilleton a été produit à partir des numér
 ## Transformation XSLT
 La feuille de style ```XSL```, réalisée pour l'évaluation du cours d'```XSLT```, permet une transformation `LaTeX` d'un fichier ```XML TEI```. 
 
-![Illustration de l'édition Hetzel (1873)](edition_hetzel_1873 "Titre")
+![Illustration de l'édition Hetzel (1873)](edition_hetzel_1873.jpg "Titre")
