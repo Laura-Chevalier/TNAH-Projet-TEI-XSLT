@@ -1,8 +1,6 @@
 # Projet d'édition numérique : _Le Tour du Monde en quatre-vingts jours_ de Jules Verne (1872)
 
-<p align="center">
-  <img "edition_hetzel_1873.jpg" alt="Illustration de l'édition Hetzel (1873)">
-</p>
+<div align="center">![Illustration de l'édition Hetzel (1873)](edition_hetzel_1873.jpg "Illustration de l'édition Hetzel (1873)")</div>
 
 ## Contexte du projet
 Ce projet d'édition numérique s'inscrit dans le cadre de l'évaluation des enseignements de `XML-TEI` et de `XSLT` du Master TNAH de l'École nationale des chartes. Il traite seulement les chapitres III et IV du _Tour du Monde en qautre-vingts jours_, publié en feuilletons dans les colonnes du journal _Le Temps_.
@@ -14,4 +12,4 @@ L'encodage en `XML-TEI` du roman-feuilleton a été produit à partir des numér
 La feuille de style ```XSL```, réalisée pour l'évaluation du cours d'```XSLT```, permet une transformation `LaTeX` d'un fichier ```XML TEI```. 
 
 
-![Illustration de l'édition Hetzel (1873)](edition_hetzel_1873.jpg "Illustration de l'édition Hetzel (1873)")
+
