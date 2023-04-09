@@ -1,7 +1,7 @@
 # Projet d'édition numérique : _Le Tour du Monde en quatre-vingts jours_ de Jules Verne (1872)
 
 <p align="center">
-  <img "edition_hetzel_1873.jp" alt="Illustration de l'édition Hetzel (1873)">
+  <img "edition_hetzel_1873.jpg" alt="Illustration de l'édition Hetzel (1873)">
 </p>
 
 ## Contexte du projet
